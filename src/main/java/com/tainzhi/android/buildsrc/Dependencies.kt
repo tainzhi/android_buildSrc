@@ -209,13 +209,17 @@ object Libs {
 
     // 腾讯X5Webview
     const val tencentTbssdk = "com.tencent.tbs.tbssdk:sdk:43697"
-
+    
     const val vertialTabLayout = "q.rorbin:VerticalTabLayout:1.2.5"
-
+    
     const val flowlayout = "com.hyman:flowlayout-lib:1.1.2"
-
+    
     const val licenseDialog = "de.psdev.licensesdialog:licensesdialog:2.1.0"
-
+    
     // AppUpdate，简单的实现App更新下载和安装
     const val appUpdate = "com.azhon:appupdateX:2.8.0"
+    
+    // launch a custom activity when your app crashes,
+    // instead of showing the hated "Unfortunately, X has stopped" dialog.
+    const val activityOnCrash = "cat.ereza:customactivityoncrash:2.3.0"
 }
