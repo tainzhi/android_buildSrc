@@ -198,19 +198,24 @@ object Libs {
         const val hujiangAspectJX = "com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8"
         const val aspectJrt = "org.aspectj:aspectjrt:1.9.2"
     }
-
+    
     const val timber = "com.jakewharton.timber:timber:4.7.1"
-
+    
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
-
+    
     const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50"
-
+    
     const val youthBanner = "com.youth.banner:banner:1.4.10"
-
+    
     // 腾讯X5Webview
     const val tencentTbssdk = "com.tencent.tbs.tbssdk:sdk:43697"
+    const val buglyCrashReport = "com.tencent.bugly:crashreport:3.1.0"
+    const val buglyNativeCrashReport = "com.tencent.bugly:nativecrashreport:3.7.1"
     
-    const val vertialTabLayout = "q.rorbin:VerticalTabLayout:1.2.5"
+    // bugly符号表有最新的版本，但是在jcenter上找不到
+    const val buglyUploadMapping = "com.tencent.bugly:symtabfileuploader:3.0"
+    
+    const val verticalTabLayout = "q.rorbin:VerticalTabLayout:1.2.5"
     
     const val flowlayout = "com.hyman:flowlayout-lib:1.1.2"
     
