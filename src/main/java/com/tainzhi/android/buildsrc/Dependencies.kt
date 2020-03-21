@@ -213,7 +213,7 @@ object Libs {
     const val buglyNativeCrashReport = "com.tencent.bugly:nativecrashreport:3.7.1"
     
     // bugly符号表有最新的版本，但是在jcenter上找不到
-    const val buglyUploadMapping = "com.tencent.bugly:symtabfileuploader:3.0"
+    const val buglyUploadMapping = "com.tencent.bugly:symtabfileuploader:2.2.1"
     
     const val verticalTabLayout = "q.rorbin:VerticalTabLayout:1.2.5"
     
