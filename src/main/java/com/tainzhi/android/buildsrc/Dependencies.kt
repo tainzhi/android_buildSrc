@@ -119,9 +119,12 @@ object Libs {
         }
 
         object Paging {
-            private const val version = "2.1.1"
-            const val common = "androidx.paging:paging-common-ktx:$version"
-            const val runtime = "androidx.paging:paging-runtime-ktx:$version"
+            private const val version = "2.1.2"
+            const val runtime = "androidx.paging:paging-runtime:$version"
+            const val runtimeKtx = "androidx.paging:paging-runtime-ktx:$version"
+    
+            // without Android dependencies for testing
+            const val common = "androidx.paging:paging-common:$version"
         }
 
         object Lifecycle {
