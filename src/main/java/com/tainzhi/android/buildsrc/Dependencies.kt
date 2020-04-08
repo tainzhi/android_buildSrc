@@ -230,4 +230,10 @@ object Libs {
     // launch a custom activity when your app crashes,
     // instead of showing the hated "Unfortunately, X has stopped" dialog.
     const val activityOnCrash = "cat.ereza:customactivityoncrash:2.3.0"
+
+    // Didi/DoraemonKit
+    object DoKit {
+        const val debugVersion = "com.didichuxing.doraemonkit:doraemonkit:3.1.1"
+        const val releaseVersion = "com.didi chuxing.doraemonkit:doraemonkit-no-op:3.1.1"
+    }
 }
