@@ -236,4 +236,7 @@ object Libs {
         const val debugVersion = "com.didichuxing.doraemonkit:doraemonkit:3.1.1"
         const val releaseVersion = "com.didi chuxing.doraemonkit:doraemonkit-no-op:3.1.1"
     }
+
+    const val multiStateView =  "com.github.Kennyc1012:MultiStateView:2.1.2"
+
 }
