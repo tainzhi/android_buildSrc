@@ -4,7 +4,7 @@ gradle.kts管理的android依赖库
 # 使用方法
 在项目根目录下
 ```
-git submodule add git@github.com:tainzhi/WanAndroid.git buildSrc
+git submodule add git@github.com:tainzhi/android_buildSrc.git buildSrc
 ```
 
 ## 必须
