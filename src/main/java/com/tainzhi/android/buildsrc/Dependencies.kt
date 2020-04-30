@@ -132,6 +132,7 @@ object Libs {
             const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
             const val viewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$version"
             const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
+            const val compiler = "androidx.lifecycle:lifecycle-compiler:$version"
         }
 
         object Room {
@@ -200,6 +201,12 @@ object Libs {
     object AspectJX {
         const val hujiangAspectJX = "com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8"
         const val aspectJrt = "org.aspectj:aspectjrt:1.9.2"
+    }
+
+    object ARouter {
+        const val api = "com.alibaba:arouter-api:1.5.0"
+        const val compiler = "com.alibaba:arouter-compiler:1.2.2"
+        const val register = "com.alibaba:arouter-register:1.0.2"
     }
     
     const val timber = "com.jakewharton.timber:timber:4.7.1"
