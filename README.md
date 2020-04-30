@@ -19,3 +19,15 @@ git submodule add git@github.com:tainzhi/android_buildSrc.git buildSrc
 - 3. Delete the relevant section from `.git/config`.
 - 4. Commit
 - 5. Remove directory `.git/modules/buildSrc`
+
+# 引入第三方库需要注意的点
+### BaseRecyclerViewAdapterHelper
+[BaseRecyclerViewAdapterHelper](https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki) 需要添加
+```
+allprojects {
+	repositories {
+		...
+		maven { url "https://jitpack.io" }
+	}
+}
+```

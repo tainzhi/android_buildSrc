@@ -74,8 +74,8 @@ object Libs {
 
         object Navigation {
             private const val version = "2.3.0-alpha01"
-            const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
-            const val ui = "androidx.navigation:navigation-ui-ktx:$version"
+            const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
+            const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
         }
 
@@ -213,7 +213,7 @@ object Libs {
     
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
     
-    const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2"
+    const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.3"
     
     const val youthBanner = "com.youth.banner:banner:1.4.10"
     
