@@ -211,6 +211,8 @@ object Libs {
     }
     
     const val timber = "com.jakewharton.timber:timber:4.7.1"
+
+    const val logger = "com.orhanobut:logger:2.2.0"
     
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
     
