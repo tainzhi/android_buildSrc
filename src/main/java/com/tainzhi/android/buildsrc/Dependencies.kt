@@ -74,8 +74,8 @@ object Libs {
 
         object Navigation {
             private const val version = "2.3.0-alpha01"
-            const val fragment = "androidx.navigation:navigation-fragment-ktx:$version"
-            const val ui = "androidx.navigation:navigation-ui-ktx:$version"
+            const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
+            const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
         }
 
@@ -132,6 +132,7 @@ object Libs {
             const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
             const val viewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$version"
             const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
+            const val compiler = "androidx.lifecycle:lifecycle-compiler:$version"
         }
 
         object Room {
@@ -156,8 +157,9 @@ object Libs {
     }
 
     object Dagger {
-        private const val version = "2.25.4"
+        private const val version = "2.16"
         const val dagger = "com.google.dagger:dagger:$version"
+        const val android = "com.google.dagger:dagger-android:$version"
         const val androidSupport = "com.google.dagger:dagger-android-support:$version"
         const val compiler = "com.google.dagger:dagger-compiler:$version"
         const val androidProcessor = "com.google.dagger:dagger-android-processor:$version"
@@ -201,12 +203,20 @@ object Libs {
         const val hujiangAspectJX = "com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.8"
         const val aspectJrt = "org.aspectj:aspectjrt:1.9.2"
     }
+
+    object ARouter {
+        const val api = "com.alibaba:arouter-api:1.5.0"
+        const val compiler = "com.alibaba:arouter-compiler:1.2.2"
+        const val register = "com.alibaba:arouter-register:1.0.2"
+    }
     
     const val timber = "com.jakewharton.timber:timber:4.7.1"
+
+    const val logger = "com.orhanobut:logger:2.2.0"
     
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
     
-    const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2"
+    const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.3"
     
     const val youthBanner = "com.youth.banner:banner:1.4.10"
     
