@@ -2,7 +2,7 @@ package com.tainzhi.android.buildsrc
 
 object Libs {
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:4.0.0-beta03"
+    const val androidGradlePlugin = "com.android.tools.build:gradle:4.0.0-beta05"
 
     const val junit = "junit:junit:4.13"
 
