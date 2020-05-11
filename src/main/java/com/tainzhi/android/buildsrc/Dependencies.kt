@@ -73,7 +73,7 @@ object Libs {
         const val preference = "androidx.preference:preference:1.1.0"
 
         object Navigation {
-            private const val version = "2.3.0-alpha01"
+            private const val version = "2.2.2"
             const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
             const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
