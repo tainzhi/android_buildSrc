@@ -249,4 +249,6 @@ object Libs {
 
     const val multiStateView =  "com.github.Kennyc1012:MultiStateView:2.1.2"
 
+    const val jsoup = "org.jsoup:jsoup:1.13.1"
+
 }
