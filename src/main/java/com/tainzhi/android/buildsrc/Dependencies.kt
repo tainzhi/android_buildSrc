@@ -85,6 +85,12 @@ object Libs {
             const val fragmentKtx = "androidx.fragment:fragment-ktx:$version"
         }
 
+        object WorkManager {
+            private const val version = "2.3.4"
+            const val workRuntimeKtx = "androidx.work:work-runtime-ktx:$version"
+            const val workTesting = "androidx.work:work-testing:$version"
+        }
+
         object Test {
             private const val version = "1.2.0"
 
@@ -147,7 +153,7 @@ object Libs {
         object Work {
             private const val version = "2.3.0"
             const val runtimeKtx = "androidx.work:work-runtime-ktx:$version"
-            const val test = "androidx.work:work-testing:$version"
+            const val workTesting = "androidx.work:work-testing:$version"
         }
     }
 
