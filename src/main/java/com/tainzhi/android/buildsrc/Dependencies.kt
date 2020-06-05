@@ -257,4 +257,5 @@ object Libs {
 
     const val jsoup = "org.jsoup:jsoup:1.13.1"
 
+    const val robolectric = "org.robolectric:robolectric:4.3"
 }
