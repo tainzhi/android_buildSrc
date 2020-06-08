@@ -192,7 +192,7 @@ object Libs {
         const val viewmodel = "org.koin:koin-androidx-viewmodel:$version"
         // Koin AndroidX Fragment features
         const val frament = "org.koin:koin-androidx-fragment:$version"
-        // Koin AndroidX Experimental features
+        // Koin AndrodX Experimental features
         const val ext = "org.koin:koin-androidx-ext:$version"
         // Koin Unit test
         const val test = "org.koin:koin-test:$version"
