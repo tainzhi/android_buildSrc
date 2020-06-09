@@ -36,6 +36,8 @@ object Libs {
         const val openSourceLicensesLibrary = "com.google.android.gms:play-services-oss-licenses:17.0.0"
 
         const val truth = "com.google.truth:truth:0.42"
+
+        const val gson = "com.google.code.gson:gson:2.8.6"
     }
 
     object Kotlin {
