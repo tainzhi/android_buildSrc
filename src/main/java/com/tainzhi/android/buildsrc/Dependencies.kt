@@ -187,13 +187,13 @@ object Libs {
     }
 
     object Koin {
-        private const val version = "2.1.3"
+        private const val version = "2.1.5"
         // Koin AndroidX Scope features
         const val scope = "org.koin:koin-androidx-scope:$version"
         // Koin AndroidX Architecture ViewModel
         const val viewmodel = "org.koin:koin-androidx-viewmodel:$version"
         // Koin AndroidX Fragment features
-        const val frament = "org.koin:koin-androidx-fragment:$version"
+        const val fragment = "org.koin:koin-androidx-fragment:$version"
         // Koin AndrodX Experimental features
         const val ext = "org.koin:koin-androidx-ext:$version"
         // Koin Unit test
