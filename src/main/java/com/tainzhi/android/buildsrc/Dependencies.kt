@@ -262,4 +262,7 @@ object Libs {
     const val robolectric = "org.robolectric:robolectric:4.1"
 
     const val volley = "com.android.volley:volley:1.1.1"
+
+    // airbnb lottie-android
+    const val lottie = "com.airbnb.android:lottie:3.4.1"
 }
