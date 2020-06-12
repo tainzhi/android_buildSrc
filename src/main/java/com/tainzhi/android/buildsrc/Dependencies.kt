@@ -254,6 +254,10 @@ object Libs {
         private const val version = "3.1.6"
         const val debugVersion = "com.didichuxing.doraemonkit:doraemonkit:${version}"
         const val releaseVersion = "com.didi chuxing.doraemonkit:doraemonkit-no-op:${version}"
+        // LeakCanary 已经在 doraemonkit 中动态集成，不需要自己再进行手动集成，只需要添加下面的依赖即可
+        const val leakcanary = "com.didichuxing.doraemonkit:doraemonkit-leakcanary:${version}"
+        // AOP包括以下几个功能: 1)百度、腾讯、高德地图的经纬度模拟 2)UrlConnection、Okhttp 抓包以及后续的接口hook功能 3)App 启动耗时统计 4)慢函数 5)大图
+        const val plugin = "com.didichuxing.doraemonkit:doraemonkit-plugin:${version}"
     }
 
     const val multiStateView =  "com.github.Kennyc1012:MultiStateView:2.1.2"
