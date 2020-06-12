@@ -251,8 +251,9 @@ object Libs {
 
     // Didi/DoraemonKit
     object DoKit {
-        const val debugVersion = "com.didichuxing.doraemonkit:doraemonkit:3.1.1"
-        const val releaseVersion = "com.didi chuxing.doraemonkit:doraemonkit-no-op:3.1.1"
+        private const val version = "3.1.6"
+        const val debugVersion = "com.didichuxing.doraemonkit:doraemonkit:${version}"
+        const val releaseVersion = "com.didi chuxing.doraemonkit:doraemonkit-no-op:${version}"
     }
 
     const val multiStateView =  "com.github.Kennyc1012:MultiStateView:2.1.2"
