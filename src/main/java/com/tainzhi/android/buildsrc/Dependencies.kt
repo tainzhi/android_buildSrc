@@ -270,4 +270,7 @@ object Libs {
 
     // airbnb lottie-android
     const val lottie = "com.airbnb.android:lottie:3.4.1"
+
+    // 标题栏toolbar
+    const val titlebar = "com.wuhenzhizao:titlebar:1.2.0"
 }
