@@ -273,4 +273,7 @@ object Libs {
 
     // 标题栏toolbar
     const val titlebar = "com.wuhenzhizao:titlebar:1.2.0"
+
+    // 全面屏,刘海屏全屏
+    const val notchScreenTool = "com.github.smarxpan:NotchScreenTool:0.0.1"
 }
