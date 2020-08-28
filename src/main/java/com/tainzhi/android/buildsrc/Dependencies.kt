@@ -224,7 +224,7 @@ object Libs {
     
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
     
-    const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.3"
+    const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4"
     
     const val youthBanner = "com.youth.banner:banner:1.4.10"
     
