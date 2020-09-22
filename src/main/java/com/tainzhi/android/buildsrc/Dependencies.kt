@@ -70,7 +70,7 @@ object Libs {
         const val emoji = "androidx.emoji:emoji:1.0.0"
         const val swiperefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha03"
         const val viewPager2 = "androidx.viewpager2:viewpager2:1.0.0"
-        const val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.0-beta4"
+        const val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.1"
 
         const val preference = "androidx.preference:preference:1.1.0"
 
