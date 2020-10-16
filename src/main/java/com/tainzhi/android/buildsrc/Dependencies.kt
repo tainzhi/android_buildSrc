@@ -174,7 +174,7 @@ object Libs {
     }
 
     object Retrofit {
-        private const val version = "2.7.1"
+        private const val version = "2.9.0"
         const val retrofit = "com.squareup.retrofit2:retrofit:$version"
         const val retrofit_rxjava_adapter = "com.squareup.retrofit2:adapter-rxjava2:$version"
         const val gsonConverter = "com.squareup.retrofit2:converter-gson:$version"
@@ -201,7 +201,8 @@ object Libs {
     }
 
     object Glide {
-        private const val version = "4.10.0"
+
+        private const val version = "4.11.0"
         const val glide = "com.github.bumptech.glide:glide:4.10.0"
         const val compiler = "com.github.bumptech.glide:compiler:4.10.0"
     }
