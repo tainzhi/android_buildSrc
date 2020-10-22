@@ -136,11 +136,36 @@ object Libs {
         }
 
         object Lifecycle {
+
             private const val version = "2.2.0"
-            const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
+
+            // ViewModel
             const val viewmodelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:$version"
+
+            // LiveData
             const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
+
+            // Lifecycles only (without ViewModel or LiveData)
+            const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:$version"
+            const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
+
+            // Annotation processor
             const val compiler = "androidx.lifecycle:lifecycle-compiler:$version"
+
+            // Saved state module for ViewModel
+            const val viewmodelSaveState = "androidx.lifecycle:lifecycle-viewmodel-savedstate:$version"
+
+            // optional - helpers for implementing LifecycleOwner in a Service
+            const val service = "androidx.lifecycle:lifecycle-service:$version"
+
+            // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+            const val process = "androidx.lifecycle:lifecycle-process:$version"
+
+            // optional - ReactiveStreams support for LiveData
+            const val reactiveStreams = "androidx.lifecycle:lifecycle-reactivestreams-ktx:$version"
+
+            // optional - Test helpers for LiveData
+            const val testing = "androidx.arch.core:core-testing:$version"
         }
 
         object Room {
