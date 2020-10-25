@@ -10,9 +10,9 @@ object Libs {
 
     object Version {
         const val minSdkVersion = 26
-        const val targetSdkVersion = 29
-        const val compileSdkVersion = 29
-        const val buildToolsVersion =  "29.0.2"
+        const val targetSdkVersion = 30
+        const val compileSdkVersion = 30
+        const val buildToolsVersion =  "30.0.2"
 
     }
 
@@ -26,7 +26,7 @@ object Libs {
     }
 
     object Google {
-        const val material = "com.google.android.material:material:1.2.0-alpha03"
+        const val material = "com.google.android.material:material:1.2.0"
         const val firebaseCore = "com.google.firebase:firebase-core:17.2.2"
         const val crashlytics = "com.crashlytics.sdk.android:crashlytics:2.10.1"
         const val gmsGoogleServices = "com.google.gms:google-services:4.3.3"
@@ -41,7 +41,7 @@ object Libs {
     }
 
     object Kotlin {
-        private const val version = "1.3.72"
+        private const val version = "1.4.10"
         const val stdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Kotlin.version}"
         const val stdlibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.version}"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
@@ -51,7 +51,7 @@ object Libs {
     }
 
     object Coroutines {
-        private const val version = "1.3.3"
+        private const val version = "1.3.9"
 
         const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
         const val rx2 = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$version"
@@ -60,8 +60,8 @@ object Libs {
     }
 
     object AndroidX {
-        const val appcompat = "androidx.appcompat:appcompat:1.1.0"
-        const val coreKtx = "androidx.core:core-ktx:1.2.0"
+        const val appcompat = "androidx.appcompat:appcompat:1.2.0"
+        const val coreKtx = "androidx.core:core-ktx:1.3.0"
         const val archCoreTesting = "androidx.arch.core:core-testing:2.1.0"
         const val browser = "androidx.browser:browser:1.2.0"
         const val collection = "androidx.collection:collection-ktx:1.1.0"
@@ -70,7 +70,7 @@ object Libs {
         const val emoji = "androidx.emoji:emoji:1.0.0"
         const val swiperefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha03"
         const val viewPager2 = "androidx.viewpager2:viewpager2:1.0.0"
-        const val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.1"
+        const val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.2"
 
         const val preference = "androidx.preference:preference:1.1.0"
 
@@ -212,13 +212,19 @@ object Libs {
     }
 
     object Koin {
-        private const val version = "2.1.6"
+        private const val version = "2.2.0-rc-1"
+        // gradle
+        const val gradle="org.koin:koin-gradle-plugin:$version"
         // Koin AndroidX Scope features
         const val scope = "org.koin:koin-androidx-scope:$version"
         // Koin AndroidX Architecture ViewModel
         const val viewmodel = "org.koin:koin-androidx-viewmodel:$version"
         // Koin AndroidX Fragment features
         const val fragment = "org.koin:koin-androidx-fragment:$version"
+        // Koin AndroidX WorkManager
+        const val workmanager = "org.koin:koin-androidx-workmanager:$version"
+        // Koin AndroidX Jetpack Compose
+        const val  compose = "org.koin:koin-androidx-compose:$version"
         // Koin AndrodX Experimental features
         const val ext = "org.koin:koin-androidx-ext:$version"
         // Koin Unit test
