@@ -212,7 +212,7 @@ object Libs {
     }
 
     object Koin {
-        private const val version = "2.2.0-rc-1"
+        private const val version = "2.2.0"
         // gradle
         const val gradle="org.koin:koin-gradle-plugin:$version"
         // Koin AndroidX Scope features
