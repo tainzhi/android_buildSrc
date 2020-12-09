@@ -201,8 +201,15 @@ object Libs {
     object Retrofit {
         private const val version = "2.9.0"
         const val retrofit = "com.squareup.retrofit2:retrofit:$version"
-        const val retrofit_rxjava_adapter = "com.squareup.retrofit2:adapter-rxjava2:$version"
+        const val rxjavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:$version"
         const val gsonConverter = "com.squareup.retrofit2:converter-gson:$version"
+        const val moshiConverter = "com.squareup.retrofit2:converter-moshi:$version"
+    }
+
+    object Moshi {
+        private const val version = "1.11.0"
+        const val moshi = "com.squareup.moshi:moshi-kotlin:$version"
+        const val codeGen = "com.squareup.moshi:moshi-kotlin-codegen:$version"
     }
 
     object OkHttp {
