@@ -316,4 +316,6 @@ object Libs {
 
     // 全面屏,刘海屏全屏
     const val notchScreenTool = "com.github.smarxpan:NotchScreenTool:0.0.1"
+
+    const val xmlToJson = "com.github.smart-fun:XmlToJson:1.4.5"
 }
