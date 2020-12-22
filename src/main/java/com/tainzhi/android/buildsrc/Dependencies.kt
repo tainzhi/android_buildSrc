@@ -8,19 +8,39 @@ object Libs {
 
     const val leakCanary = "com.squareup.leakcanary:leakcanary-android:2.1"
 
-    object Version {
+    object Configs {
         const val minSdkVersion = 26
         const val targetSdkVersion = 30
         const val compileSdkVersion = 30
-        const val buildToolsVersion =  "30.0.2"
+        const val buildToolsVersion = "30.0.2"
 
+    }
+
+    /*
+    plugins {
+        id(Plugins.androidApplication)
+        id(Plugins.crashlytics)
+        kotlin(Plugins.kotlinAndroid)
+        kotlin(Plugins.kotlinExtensions)
+        kotlin(Plugins.kapt)
+    }
+     */
+    object Plugins {
+        const val androidApplication = "com.android.application"
+        const val kotlinAndroid = "android"
+        const val kotlinExtensions = "android.extensions"
+        const val kapt = "kapt"
+        const val detekt = "io.gitlab.arturbosch.detekt"
+        const val crashlytics = "io.fabric"
     }
 
     // Mockito framework
     object Mockito {
         private const val version = "3.3.0"
+
         // for unit test
         const val core = "org.mockito:mockito-core:$version"
+
         // for android test
         const val android = "org.mockito:mockito-android:$version"
     }
