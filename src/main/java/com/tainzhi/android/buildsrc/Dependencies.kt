@@ -1,8 +1,11 @@
 package com.tainzhi.android.buildsrc
 
+import java.text.SimpleDateFormat
+import java.util.Locale
+
 object Libs {
 
-    const val androidGradlePlugin = "com.android.tools.build:gradle:4.0.0"
+    const val androidToolBuildGradle = "com.android.tools.build:gradle:4.0.0"
 
     const val junit = "junit:junit:4.13"
 
@@ -41,7 +44,7 @@ object Libs {
     }
 
     object Kotlin {
-        private const val version = "1.4.10"
+        const val version = "1.4.10"
         const val stdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Kotlin.version}"
         const val stdlibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.version}"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
