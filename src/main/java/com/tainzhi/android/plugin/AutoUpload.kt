@@ -4,7 +4,6 @@ import com.android.build.gradle.AppExtension
 import org.gradle.api.Action
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.gradle.api.Task
 import java.io.File
 
 /**
@@ -38,26 +37,16 @@ class UploadPgy : Plugin<Project> {
                         }
                     }
                 outputFile?.let { file ->
-                    flavorTask(this, file, flavor, buildType, outputStr, config)
+                    println("--------------------------outputfile-------------------------------------")
+                    // this.dependsOn("assemble${flavor}${buildType}").also {
+                    this.dependsOn("assemblePgyDebug").also {
+                        it.actions.add(Action {
+                            println("begin upload")
+                            dispatchUpload(file, config)
+                        })
+                    }
                 }
             }
-        }
-    }
-
-    private fun flavorTask(
-        task: Task,
-        file: File,
-        flavor: String,
-        buildType: String,
-        outputStr: String,
-        config: UpLoadPgyConfig
-    ) {
-        task.dependsOn("assembleRelease").let {
-        // task.dependsOn("assemble$flavor$buildType").let {
-            it.actions.add(Action {
-                println("begin upload")
-                dispatchUpload(file, config)
-            })
         }
     }
 

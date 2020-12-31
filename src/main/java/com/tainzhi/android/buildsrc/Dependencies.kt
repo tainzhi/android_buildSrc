@@ -1,11 +1,8 @@
 package com.tainzhi.android.buildsrc
 
-import java.text.SimpleDateFormat
-import java.util.Locale
-
 object Libs {
 
-    const val androidToolBuildGradle = "com.android.tools.build:gradle:4.0.0"
+    const val androidToolBuildGradle = "com.android.tools.build:gradle:4.0.1"
 
     const val junit = "junit:junit:4.13"
 
