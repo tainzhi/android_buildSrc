@@ -17,4 +17,16 @@ object Util {
         val simpleDateFormat = SimpleDateFormat("MMddHHmmss", Locale.CHINA)
         return simpleDateFormat.format(System.currentTimeMillis())
     }
+
+    fun upperCaseFirst(str: String) :String {
+        val ch = str.toCharArray()
+        if (ch[0] in 'a'..'z') {
+            ch[0] = ch[0] - 32
+        }
+        return String(ch)
+    }
+}
+
+object Constant {
+    const val autoUploadExtensionName = "autoUpload"
 }

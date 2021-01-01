@@ -19,14 +19,13 @@ import com.tainzhi.android.Util
  * Mail:     QFQ61@qq.com
  * Description:
  */
-class UpLoader {
+class UpLoader(private val config: PgyConfig) {
     companion object {
         const val password = "1234"
     }
 
     fun upload(
-        file: File,
-        config: UpLoadPgyConfig
+        file: File
     ): String {
         val fileBody = file.asRequestBody("multipart/form-data".toMediaType())
 
@@ -66,16 +65,19 @@ class UpLoader {
         val responseString = execute.body?.string()
         if (responseString != null) {
             val resBean = Moshi.Builder().build().adapter(ResBean::class.java).fromJson(responseString)
-            val result = generateUpdateContent("")
+            if (resBean != null) {
+                val result = generateUpdateContent(resBean.data)
 
-            //写入到上传日志文件中
-            writeJournal(
-                file.parent,
-                resBean!!.data?.buildBuildVersion,
-                resBean.data?.buildVersion,
-                result
-            )
-            return result
+                //写入到上传日志文件中
+                writeJournal(
+                    file.parent,
+                    resBean.data.buildBuildVersion,
+                    resBean.data.buildVersion,
+                    result
+                )
+                return result
+            }
+            return "上传失败..."
         }else {
             return "上传失败..."
         }
@@ -86,10 +88,15 @@ class UpLoader {
         file.writeText(content)
     }
 
-    private fun generateUpdateContent(resData: String) : String{
+    private fun generateUpdateContent(resData: Data) : String{
         return  """
 ========================result begin=======================
+应用: ${resData.buildName}   
+版本: ${resData.buildVersion}
+短连接: https://www.pgyer.com/${resData.buildShortcutUrl}
+二维码地址: ${resData.buildQRCodeURL}
+更新说明: ${resData.buildUpdateDescription}
 ========================result end=========================
-""".trimIndent()
+                """.trimIndent()
     }
 }

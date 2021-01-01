@@ -5,41 +5,39 @@ import org.gradle.api.Action
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import java.io.File
+import com.tainzhi.android.Constant
+import com.tainzhi.android.Util
 
 /**
  * File:     Upload
  * Author:   tainzhi
  * Created:  2020/12/30 16:48
  * Mail:     QFQ61@qq.com
- * Description:
+ * Description: 自动上传安装包到蒲公英
  */
-class UploadPgy : Plugin<Project> {
+class AutoUpload : Plugin<Project> {
 
-    private var flavor = "pgy"
-    private var buildType = "release"
-    private var configName = "uploadConfig"
     override fun apply(project: Project) {
-        project.extensions.create(configName, UpLoadPgyConfig::class.java)
-        val config = project.extensions.getByName(configName) as UpLoadPgyConfig
+        project.extensions.create(Constant.autoUploadExtensionName, PgyConfig::class.java)
+        val config = project.extensions.getByName(Constant.autoUploadExtensionName) as PgyConfig
         project.afterEvaluate {
-            this.task("UploadPgy") {
+            this.task("AutoUpload") {
                 this.description = "upload release apk to 蒲公英"
-                this.group = "upload pyg"
-                var outputStr = ""
+                this.group = "AutoUpload"
                 var outputFile: File? = null
                 project.extensions.getByType(AppExtension::class.java)
                     .applicationVariants.forEach {
                         it.outputs.forEach { output ->
-                            if (output.name.equals("$flavor-$buildType")) {
-                                outputStr = output.name
+                            // like: pgy-debug
+                            if (output.name == "${config.flavor}-${config.buildType}") {
                                 outputFile = output.outputFile
                             }
                         }
                     }
                 outputFile?.let { file ->
-                    println("--------------------------outputfile-------------------------------------")
-                    // this.dependsOn("assemble${flavor}${buildType}").also {
-                    this.dependsOn("assemblePgyDebug").also {
+                    // assemblePgyRelease, 首字母必须大写, 在dependsOn
+                    // 而在 ./gradlew assemblepgyrelease可以小写
+                    this.dependsOn("assemble${Util.upperCaseFirst(config.flavor)}${Util.upperCaseFirst(config.buildType)}").also {
                         it.actions.add(Action {
                             println("begin upload")
                             dispatchUpload(file, config)
@@ -50,17 +48,16 @@ class UploadPgy : Plugin<Project> {
         }
     }
 
-    private fun dispatchUpload(outFile: File, config: UpLoadPgyConfig) {
-        UpLoader().upload(outFile, config).also {
-            println(
-                """
+    private fun dispatchUpload(outFile: File, config: PgyConfig) {
+        val result = UpLoader(config).upload(outFile)
+        println(
+            """
 ---------------------------------------------------------------------------------------------------
                                          upload success
 ---------------------------------------------------------------------------------------------------
-${this}
+$result
             """.trimIndent()
-            )
-        }
+        )
     }
 }
 
