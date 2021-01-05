@@ -338,4 +338,7 @@ object Libs {
     const val notchScreenTool = "com.github.smarxpan:NotchScreenTool:0.0.1"
 
     const val xmlToJson = "com.github.smart-fun:XmlToJson:1.4.5"
+
+    // 方便设置状态栏和导航栏效果
+    const val ultimatebarx = "com.zackratos.ultimatebarx:ultimatebarx:0.3.3"
 }
