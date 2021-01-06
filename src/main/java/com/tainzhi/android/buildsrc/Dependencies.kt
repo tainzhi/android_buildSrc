@@ -340,5 +340,6 @@ object Libs {
     const val xmlToJson = "com.github.smart-fun:XmlToJson:1.4.5"
 
     // 方便设置状态栏和导航栏效果
+    // https://github.com/Zackratos/UltimateBarX
     const val ultimatebarx = "com.zackratos.ultimatebarx:ultimatebarx:0.3.3"
 }
