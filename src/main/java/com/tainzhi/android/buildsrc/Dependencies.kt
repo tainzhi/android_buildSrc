@@ -61,9 +61,9 @@ object Libs {
     }
 
     object Kotlin {
-        const val version = "1.4.10"
-        const val stdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Kotlin.version}"
-        const val stdlibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Kotlin.version}"
+        const val version = "1.4.20"
+        const val stdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${version}"
+        const val stdlibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version}"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
         const val reflect = "org.jetbrains.kotlin:kotlin-reflect:$version"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
@@ -165,6 +165,9 @@ object Libs {
             // LiveData
             const val livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$version"
 
+            // https://github.com/jraska/livedata-testing
+            const val livedataTesting = "com.jraska.livedata:testing-ktx:1.1.2"
+
             // Lifecycles only (without ViewModel or LiveData)
             const val runtime = "androidx.lifecycle:lifecycle-runtime-ktx:$version"
             const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
@@ -203,6 +206,9 @@ object Libs {
             const val workTesting = "androidx.work:work-testing:$version"
         }
     }
+
+    // http://hamcrest.org/JavaHamcrest/distributables
+    const val hamcrest = "org.hamcrest:hamcrest:2.2"
 
     object RxJava {
         const val rxJava = "io.reactivex.rxjava2:rxjava:2.2.11"
@@ -338,6 +344,12 @@ object Libs {
     const val notchScreenTool = "com.github.smarxpan:NotchScreenTool:0.0.1"
 
     const val xmlToJson = "com.github.smart-fun:XmlToJson:1.4.5"
+
+    // json包含在android sdk中, 但是单元测试中没有该包
+    // 报错 Method put in org.json.JSONObject not mocked
+    // 解决办法: https://blog.csdn.net/u010513377/article/details/102938807
+    // json maven: https://mvnrepository.com/artifact/org.json/json?__cf_chl_captcha_tk__=a667358e389f181a56f6e51d65b1d5c9fa21ae78-1610526080-0-Acd6MaR0FBsffq3-jcACIoj8zFKdit0FyTt9VF_-mZEVnhOhopOEXa1XQDcl9RnMvJWW_gsY5T1v4LlnsUguWeBTPuzooChL0t3sDSLkb84W7XabHgbtcFciKj7_Jzzk4jUPb88XLXUZIV1eVMrF2L8pTaDPbD0V7EZphTJmKEdLvCcYyXl-rj71X13idbv2nSoSAI5MsovjdrjaePJtHYigF5r_y1DxGJ1zon48KgVMvLT5Upt9N9jd7WPiuYinlOOzryfuJ9vV7tc_tBANDqg0wQLEho9HMaWEcQuXQrKLeaXcf0jiMe7ktQjqVg0F-RAkChEbgj0zii8O5a5n3J7XYyGHR1mrN20heedQYlmBQK6YaKdrkO05zthYjNkX_sUtIG1VMQR6w78R8Ox2wutbS5r8p4z5jf3aJqWgqN-5FKENeE1nJHNqusZEC86YKUApc3qJqg_e5V3KpkXoad-0w1xg8grluQMVWcTYNkFQa6VtEbeIn4uIPXdAJ5ZqIpW3JCYGfM_tjQMzC0ZO4HAMxLP1w4gY3UZ7DBtiu_B7kXeRc5XwpU1txvveyJNp13Hax6JfSRROLY6qUGC7418fUfkGJfWISBAdOe9IiruN
+    const val json = "org.json:json:20201115"
 
     // 方便设置状态栏和导航栏效果
     // https://github.com/Zackratos/UltimateBarX
