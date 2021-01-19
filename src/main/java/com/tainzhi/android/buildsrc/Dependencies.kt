@@ -354,4 +354,20 @@ object Libs {
     // 方便设置状态栏和导航栏效果
     // https://github.com/Zackratos/UltimateBarX
     const val ultimatebarx = "com.zackratos.ultimatebarx:ultimatebarx:0.3.3"
+
+
+    // 基于tensorflow的智能内容感知的图片crop, 即任意尺寸条件的crop都能crop出图片的主要内容, 比如人像...
+    // https://github.com/the-super-toys/glimpse-android
+    object Glimpse {
+        private const val version = "0.0.5"
+        const val core = "com.github.the-super-toys.glimpse-android:glimpse-core:$version"
+
+        //only required for glide extensions
+        const val glide = "com.github.the-super-toys.glimpse-android:glimpse-glide:$version"
+
+        //only required for coil extensions
+        const val coil = "com.github.the-super-toys.glimpse-android:glimpse-coil:$version"
+    }
+
+    const val tensorflowLite = "org.tensorflow:tensorflow-lite:0.0.0-nightly"
 }
