@@ -376,4 +376,6 @@ object Libs {
     }
 
     const val tensorflowLite = "org.tensorflow:tensorflow-lite:0.0.0-nightly"
+
+    const val circleImageView = "de.hdodenhof:circleimageview:3.1.0"
 }
