@@ -266,10 +266,9 @@ object Libs {
     }
 
     object Glide {
-
-        private const val version = "4.11.0"
-        const val glide = "com.github.bumptech.glide:glide:4.10.0"
-        const val compiler = "com.github.bumptech.glide:compiler:4.10.0"
+        private const val version = "4.12.0"
+        const val glide = "com.github.bumptech.glide:glide:$version"
+        const val compiler = "com.github.bumptech.glide:compiler:$version"
     }
 
 
