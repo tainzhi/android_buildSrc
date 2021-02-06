@@ -290,6 +290,10 @@ object Libs {
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
     
     const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4"
+
+    // https://github.com/afollestad/recyclical
+    // extensible Kotlin DSL for setting up and manipulating RecyclerView
+    const val recyclical = "com.afollestad:recyclical:1.1.1"
     
     const val youthBanner = "com.youth.banner:banner:1.4.10"
     
