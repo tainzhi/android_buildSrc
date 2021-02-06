@@ -95,7 +95,7 @@ object Libs {
         const val preference = "androidx.preference:preference:1.1.0"
 
         object Navigation {
-            private const val version = "2.3.2"
+            private const val version = "2.3.3"
             const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
             const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
@@ -192,7 +192,7 @@ object Libs {
         }
 
         object Room {
-            private const val version = "2.2.3"
+            private const val version = "2.3.0-beta01"
             const val common = "androidx.room:room-common:$version"
             const val runtime = "androidx.room:room-runtime:$version"
             const val compiler = "androidx.room:room-compiler:$version"
