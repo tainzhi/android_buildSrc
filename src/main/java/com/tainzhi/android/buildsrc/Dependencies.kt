@@ -2,7 +2,7 @@ package com.tainzhi.android.buildsrc
 
 object Libs {
 
-    const val androidToolBuildGradle = "com.android.tools.build:gradle:4.1.2"
+    const val androidToolBuildGradle = "com.android.tools.build:gradle:7.0.2"
 
     const val junit = "junit:junit:4.13"
 
@@ -46,7 +46,7 @@ object Libs {
     }
 
     object Google {
-        const val material = "com.google.android.material:material:1.2.0"
+        const val material = "com.google.android.material:material:1.3.0"
         const val firebaseCore = "com.google.firebase:firebase-core:17.2.2"
         const val crashlytics = "com.crashlytics.sdk.android:crashlytics:2.10.1"
         const val gmsGoogleServices = "com.google.gms:google-services:4.3.3"
@@ -61,7 +61,7 @@ object Libs {
     }
 
     object Kotlin {
-        const val version = "1.4.20"
+        const val version = "1.5.20"
         const val stdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${version}"
         const val stdlibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version}"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
@@ -81,7 +81,7 @@ object Libs {
 
     object AndroidX {
         const val appcompat = "androidx.appcompat:appcompat:1.2.0"
-        const val coreKtx = "androidx.core:core-ktx:1.3.0"
+        const val coreKtx = "androidx.core:core-ktx:1.3.2"
         const val archCoreTesting = "androidx.arch.core:core-testing:2.1.0"
         const val browser = "androidx.browser:browser:1.2.0"
         const val collection = "androidx.collection:collection-ktx:1.1.0"
@@ -90,12 +90,12 @@ object Libs {
         const val emoji = "androidx.emoji:emoji:1.0.0"
         const val swiperefresh = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha03"
         const val viewPager2 = "androidx.viewpager2:viewpager2:1.0.0"
-        const val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.2"
+        const val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.4"
 
         const val preference = "androidx.preference:preference:1.1.0"
 
         object Navigation {
-            private const val version = "2.3.3"
+            private const val version = "2.3.5"
             const val fragmentKtx = "androidx.navigation:navigation-fragment-ktx:$version"
             const val uiKtx = "androidx.navigation:navigation-ui-ktx:$version"
             const val safeArgs = "androidx.navigation:navigation-safe-args-gradle-plugin:$version"
@@ -239,7 +239,7 @@ object Libs {
     }
 
     object OkHttp {
-        private const val version = "4.9.0"
+        private const val version = "4.9.1"
         const val okhttp = "com.squareup.okhttp3:okhttp:$version"
         const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:$version"
         const val mockWebServer = "com.squareup.okhttp3:mockwebserver:$version"
