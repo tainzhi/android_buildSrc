@@ -61,7 +61,7 @@ object Libs {
     }
 
     object Kotlin {
-        const val version = "1.5.20"
+        const val version = "1.5.30"
         const val stdlibJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${version}"
         const val stdlibJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${version}"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
@@ -72,7 +72,7 @@ object Libs {
 
     object Coroutines {
         // https://github.com/kotlin/kotlinx.coroutines/blob/master/README.md#using-in-your-projects
-        private const val version = "1.4.2"
+        private const val version = "1.5.2"
         const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
         const val rx2 = "org.jetbrains.kotlinx:kotlinx-coroutines-rx2:$version"
         const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
@@ -150,7 +150,7 @@ object Libs {
             private const val version = "2.1.2"
             const val runtime = "androidx.paging:paging-runtime:$version"
             const val runtimeKtx = "androidx.paging:paging-runtime-ktx:$version"
-    
+
             // without Android dependencies for testing
             const val common = "androidx.paging:paging-common:$version"
         }
@@ -233,7 +233,7 @@ object Libs {
     }
 
     object Moshi {
-        private const val version = "1.11.0"
+        private const val version = "1.12.0"
         const val moshi = "com.squareup.moshi:moshi-kotlin:$version"
         const val codeGen = "com.squareup.moshi:moshi-kotlin-codegen:$version"
     }
@@ -246,23 +246,28 @@ object Libs {
     }
 
     object Koin {
-        private const val version = "2.2.0"
-        // gradle
-        const val gradle="org.koin:koin-gradle-plugin:$version"
-        // Koin AndroidX Scope features
-        const val scope = "org.koin:koin-androidx-scope:$version"
-        // Koin AndroidX Architecture ViewModel
-        const val viewmodel = "org.koin:koin-androidx-viewmodel:$version"
-        // Koin AndroidX Fragment features
-        const val fragment = "org.koin:koin-androidx-fragment:$version"
-        // Koin AndroidX WorkManager
-        const val workmanager = "org.koin:koin-androidx-workmanager:$version"
-        // Koin AndroidX Jetpack Compose
-        const val  compose = "org.koin:koin-androidx-compose:$version"
-        // Koin AndrodX Experimental features
-        const val ext = "org.koin:koin-androidx-ext:$version"
-        // Koin Unit test
-        const val test = "org.koin:koin-test:$version"
+        private const val koin_version = "3.1.2"
+
+        // Koin core features
+        const val core = "io.insert-koin:koin-core:$koin_version"
+
+        // Koin test features
+        const val test = "io.insert-koin:koin-test:$koin_version"
+
+        // Koin main features for Android (Scope,ViewModel ...)
+        const val android = "io.insert-koin:koin-android:$koin_version"
+
+        // Koin for Jetpack WorkManager
+        const val androidXWorkManager = "io.insert-koin:koin-androidx-workmanager:$koin_version"
+
+        // Koin for Jetpack Compose
+        const val androidXCompose = "io.insert-koin:koin-androidx-compose:$koin_version"
+
+        // Koin for JUnit 4
+        const val testJunit4 = "io.insert-koin:koin-test-junit4:$koin_version"
+
+        // Koin for JUnit 5
+        const val testJunit5 = "io.insert-koin:koin-test-junit5:$koin_version"
     }
 
     object Glide {
@@ -282,38 +287,38 @@ object Libs {
         const val compiler = "com.alibaba:arouter-compiler:1.2.2"
         const val register = "com.alibaba:arouter-register:1.0.2"
     }
-    
+
     const val timber = "com.jakewharton.timber:timber:4.7.1"
 
     const val logger = "com.orhanobut:logger:2.2.0"
-    
+
     const val cookietar = "com.github.franmontiel:PersistentCookieJar:v1.0.1"
-    
+
     const val baseRecyclerViewAdapterHelper = "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4"
 
     // https://github.com/afollestad/recyclical
     // extensible Kotlin DSL for setting up and manipulating RecyclerView
     const val recyclical = "com.afollestad:recyclical:1.1.1"
-    
+
     const val youthBanner = "com.youth.banner:banner:1.4.10"
-    
+
     // 腾讯X5Webview
     const val tencentTbssdk = "com.tencent.tbs.tbssdk:sdk:43697"
     const val buglyCrashReport = "com.tencent.bugly:crashreport:3.1.0"
     const val buglyNativeCrashReport = "com.tencent.bugly:nativecrashreport:3.7.1"
-    
+
     // bugly符号表有最新的版本，但是在jcenter上找不到
     const val buglyUploadMapping = "com.tencent.bugly:symtabfileuploader:2.2.1"
-    
+
     const val verticalTabLayout = "q.rorbin:VerticalTabLayout:1.2.5"
-    
+
     const val flowlayout = "com.hyman:flowlayout-lib:1.1.2"
-    
+
     const val licenseDialog = "de.psdev.licensesdialog:licensesdialog:2.1.0"
-    
+
     // AppUpdate，简单的实现App更新下载和安装
     const val appUpdate = "com.azhon:appupdateX:2.8.0"
-    
+
     // launch a custom activity when your app crashes,
     // instead of showing the hated "Unfortunately, X has stopped" dialog.
     const val activityOnCrash = "cat.ereza:customactivityoncrash:2.3.0"
@@ -321,18 +326,15 @@ object Libs {
     // Didi/DoraemonKit
     // http://xingyun.xiaojukeji.com/docs/dokit/#/androidGuide
     object DoKit {
-        private const val version = "3.3.5"
-        const val debugVersion = "com.didichuxing.doraemonkit:dokitx:${version}"
-        const val releaseVersion = "com.didichuxing.doraemonkit:dokitx-no-op:${version}"
-
-        // LeakCanary 已经在 doraemonkit 中动态集成，不需要自己再进行手动集成，只需要添加下面的依赖即可
-        const val leakcanary = "com.didichuxing.doraemonkit:doraemonkit-leakcanary:${version}"
+        private const val version = "3.5.0-beta01"
+        const val debugVersion = "io.github.didi.dokit:dokitx:${version}"
+        const val releaseVersion = "io.github.didi.dokit:dokitx-no-op:${version}"
 
         // AOP包括以下几个功能:
         // 1)百度、腾讯、高德地图的经纬度模拟
         // 2)UrlConnection、Okhttp 抓包以及后续的接口hook功能
         // 3)App 启动耗时统计 4)慢函数 5)大图
-        const val plugin = "com.didichuxing.doraemonkit:dokitx-plugin:${version}"
+        const val plugin = "io.github.didi.dokit:dokitx-plugin:${version}"
     }
 
     const val multiStateView =  "com.github.Kennyc1012:MultiStateView:2.1.2"
